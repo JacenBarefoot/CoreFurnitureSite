@@ -10,3 +10,9 @@
 .center {
   justify-content: center;
 }
+
+.body-bg {
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
