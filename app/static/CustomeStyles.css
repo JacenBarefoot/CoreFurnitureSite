@@ -12,7 +12,11 @@
 }
 
 .body-bg {
+<<<<<<< HEAD
   background-image: url("static/images/bg.jpg");
+=======
+  background-image: url("static/bg.jpg");
+>>>>>>> b1f69a0dda82bd4088839370fe418e6525ea0a10
   background-size: cover;
   background-attachment: fixed;
 }
