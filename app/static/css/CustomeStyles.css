@@ -16,3 +16,8 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+.footer {
+  background-image: url("/static/images/corefooter.png");
+  background-size: inherit;
+}
