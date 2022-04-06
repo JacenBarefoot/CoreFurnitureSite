@@ -7,12 +7,17 @@
   width: 100%;
 }
 
-.catalog-image:hover{
-  border: 2px solid black;
+.catalog-image:hover {
+  box-shadow: 2px 2px 8px 8px rgba(173, 216, 230, 0.692),
+    2px 2px 2px 2px black inset;
 }
 
 .center {
   justify-content: center;
+}
+
+.nb-bg {
+  background-color: lightskyblue;
 }
 
 .body-bg {
