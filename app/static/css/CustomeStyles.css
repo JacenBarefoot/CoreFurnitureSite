@@ -1,0 +1,23 @@
+.catalog-item {
+  width: 50%;
+  margin-top: 2%;
+}
+
+.catalog-image {
+  width: 100%;
+}
+
+.center {
+  justify-content: center;
+}
+
+.body-bg {
+  background-image: url("/static/images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footer {
+  background-image: url("/static/images/corefooter.png");
+  background-size: inherit;
+}
