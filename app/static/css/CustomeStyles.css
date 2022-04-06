@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+.catalog-image:hover{
+  border: 2px solid black;
+}
+
 .center {
   justify-content: center;
 }
