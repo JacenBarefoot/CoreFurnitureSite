@@ -20,13 +20,9 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
-    path('/', views.home, name="home"),
+    path('', home3, name="home3"),
     path('about/', views.about, name="aboutCore"),
     path('item/{itemId}/', views.item, name="items"),
     path('login/', views.login, name="login"),
     path('logout/', views.logout, name='logout')
-=======
-    path('', home3, name="home3")
->>>>>>> fd6e95b709c973864237947c43e206438fb00707
 ]
