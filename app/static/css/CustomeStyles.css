@@ -7,8 +7,17 @@
   width: 100%;
 }
 
+.catalog-image:hover {
+  box-shadow: 2px 2px 8px 8px rgba(173, 216, 230, 0.692),
+    2px 2px 2px 2px black inset;
+}
+
 .center {
   justify-content: center;
+}
+
+.nb-bg {
+  background-color: lightskyblue;
 }
 
 .body-bg {
@@ -20,4 +29,14 @@
 .footer {
   background-image: url("/static/images/corefooter.png");
   background-size: inherit;
+}
+
+.logo {
+  max-width: 65px;
+  max-height: 65px;
+  margin-right: 20px;
+}
+
+.dark-text a {
+  color: black;
 }

@@ -4,6 +4,9 @@ from django.contrib.auth import authenticate, login, logout
 def home3(request):
 	return render(request, 'Home3.html')
 
+def itemPage(request):
+    return render(request, 'ItemPage.html')
+    
 def about():
     ...
 

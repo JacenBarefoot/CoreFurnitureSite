@@ -1,10 +1,10 @@
 document.getElementById("demo").addEventListener("mouseover", mouseOver);
 document.getElementById("demo").addEventListener("mouseout", mouseOut);
 
-function mouseOver() {
-  document.getElementById("demo").style.border = "red";
+function mouseOver(str) {
+  document.getElementById("demo").border = str;
 }
 
 function mouseOut() {
-  document.getElementById("demo").style.color = "black";
+  document.getElementById("demo").border = none;
 }
