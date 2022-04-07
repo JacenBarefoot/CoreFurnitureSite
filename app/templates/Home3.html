@@ -13,22 +13,20 @@
   </head>
   <body>
     <div class="body-bg">
-      <div class="navbar navbar-inverse navbar-fixed-top nb-bg">
+      <div class="navbar navbar-fixed-top nb-bg">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="">
-              <img src="{% static 'images/core_logo.png'%}" alt="" />
-            </a>
+            <img class="logo" src="{% static 'images/core_logo.png'%}" alt="" />
           </div>
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav dark-text">
             <li class="active"><a href="{% url 'home3' %}">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">For Kids</a></li>
+            <li><a ref="#">For Kids</a></li>
             <li><a href="#">FAQ</a></li>
           </ul>
         </div>
       </div>
-      <div class="container" style="margin-top: 3.5%"></div>
+      <div class="container py-3" style="margin-top: 3.5%"></div>
 
       <div class="container" style="width: 100%">
         <div class="row">

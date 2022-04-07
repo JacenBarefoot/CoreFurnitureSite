@@ -30,3 +30,13 @@
   background-image: url("/static/images/corefooter.png");
   background-size: inherit;
 }
+
+.logo {
+  max-width: 65px;
+  max-height: 65px;
+  margin-right: 20px;
+}
+
+.dark-text a {
+  color: black;
+}
