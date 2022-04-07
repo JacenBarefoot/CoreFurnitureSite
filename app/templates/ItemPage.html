@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +19,7 @@
         </div>
         <ul class="nav navbar-nav">
           <li class="active">
-            <a href="#">Home</a>
+            <a href="{% url 'home3' %}">Home</a>
           </li>
           <li><a href="#">About</a></li>
           <li><a href="#">For Kids</a></li>
@@ -40,7 +41,7 @@
         </div>
 
         <div class="col-lg-4">
-          <img src="{% static 'chair.png' %}" alt="" />
+          <img src="{% static 'images/chair.png' %}" alt="" />
           <div class="row">
             <button>Angle 1</button>
             <button>Angle 2</button>

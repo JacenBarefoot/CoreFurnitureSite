@@ -19,7 +19,7 @@
             <a class="navbar-brand" href="#"> Core Furniture</a>
           </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="{% url 'home3' %}">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">For Kids</a></li>
             <li><a href="#">FAQ</a></li>
@@ -31,7 +31,7 @@
       <div class="container" style="width: 100%">
         <div class="row">
           <div class="col-md-2 catalog-item hover-zoom">
-            <a href="ItemPage.html" style="background-color: white">
+            <a href="{% url 'itemPage' %}" style="background-color: white">
               <img
                 class="catalog-image"
                 src="{% static 'images/pchair.png' %}"
