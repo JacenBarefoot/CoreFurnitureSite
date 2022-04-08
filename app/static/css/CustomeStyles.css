@@ -32,11 +32,15 @@
 }
 
 .logo {
-  max-width: 65px;
-  max-height: 65px;
+  max-width: 75px;
+  max-height: 75px;
   margin-right: 20px;
 }
 
 .dark-text a {
   color: black;
+}
+
+.active {
+  background: white;
 }
