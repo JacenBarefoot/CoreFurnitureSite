@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="{% static 'css/CustomeStyles.css' %}" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,15 +13,13 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top nb-bg">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"> Core Furniture</a>
+          <img class="logo" src="{% static 'images/core_logo.png'%}" alt="" />
         </div>
-        <ul class="nav navbar-nav">
-          <li class="active">
-            <a href="{% url 'home3' %}">Home</a>
-          </li>
+        <ul class="nav navbar-nav dark-text">
+          <li class="active"><a href="{% url 'home3' %}">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">For Kids</a></li>
           <li><a href="#">FAQ</a></li>
@@ -29,16 +28,7 @@
     </div>
 
     <div class="bg-white" style="margin-top: 3.4%">
-      <div class="row">
-        <div class="col-lg-2" style="justify-content: center">
-          <h2><button>Hello!</button></h2>
-          <h2><button>Hello!</button></h2>
-          <h2><button>Hello!</button></h2>
-          <h2><button>Hello!</button></h2>
-          <h2><button>Hello!</button></h2>
-          <h2><button>Hello!</button></h2>
-          <h2><button>Hello!</button></h2>
-        </div>
+      <div class="row" style="margin-left: 10em">
 
         <div class="col-lg-4">
           <img src="{% static 'images/chair.png' %}" alt="" />
@@ -79,7 +69,6 @@
                 <p>Small</p>
                 <p>Medium</p>
                 <p>Large</p>
-                <p>Hulk</p>
               </div>
             </div>
           </div>
