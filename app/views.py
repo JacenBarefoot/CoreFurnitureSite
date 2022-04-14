@@ -7,6 +7,9 @@ def home3(request):
 def itemPage(request):
     return render(request, 'ItemPage.html')
     
+def homeTest(request):
+    return render(request, 'home4.html')
+    
 def about():
     ...
 

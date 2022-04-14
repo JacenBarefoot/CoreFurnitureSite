@@ -22,6 +22,7 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     path('', home3, name="home3"),
     path('itemPage/', itemPage, name="itemPage"),
+    path('HomeTest', homeTest, name="homeTest"),
     # path('about/', views.about, name="aboutCore"),
     # path('item/{itemId}/', views.item, name="items"),
     # path('login/', views.login, name="login"),
