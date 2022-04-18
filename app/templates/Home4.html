@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href={% static 'css/TestStyles.css' %} />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      {% comment %}
+      <div class="row navbar">
+        <img class="logo" src="{% static 'images/core_logo.png' %}" alt="" />
+        <div class="row nav-tabs">
+          <a class="nav-tab" href="#"> Home </a>
+          <a class="nav-tab" href="/"> Browse </a>
+          <a class="nav-tab" href="#"> About </a>
+        </div>
+      </div>
+      {% endcomment %}
+      <div class="row">
+        <img
+          class="center-piece"
+          src="{% static 'images/placeholder.jpg' %}"
+          alt=""
+        />
+      </div>
+      <div class="row home-text">
+        <h1>CORE FURNITURE</h1>
+        <div class="home-options">
+          <a class="hot" href="#"> About </a>
+          <a class="hot" href="#"> Browse </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

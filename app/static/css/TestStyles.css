@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  background: linear-gradient(
+    rgb(64, 111, 199),
+    rgb(102, 127, 173),
+    white,
+    rgb(102, 127, 173),
+    rgb(64, 111, 199)
+  );
+  height: 14%;
+  border-style: solid;
+}
+
+.nav-tabs {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  margin-right: 5%;
+  justify-content: space-around;
+}
+
+.nav-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  padding: 5%;
+  font-size: 1.75em;
+  text-shadow: 2px 2px white;
+}
+
+.nav-tab:hover {
+  background: linear-gradient(skyblue, ghostwhite, skyblue);
+}
+
+.logo {
+  max-height: 100px;
+  max-width: 150px;
+  margin-left: 7.5%;
+}
+
+.center-piece {
+  height: 100%;
+  width: 100%;
+  background-image: URL("/static/images/placeholder.jpg");
+}
+
+.home-text {
+  border-radius: 25%;
+  background-color: rgba(0, 0, 0, 0.253);
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
+  text-shadow: 2px 2px 8px white;
+  justify-content: center;
+  align-items: center;
+  color: rgb(40, 40, 243);
+  font-family: "Patua One";
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 2px;
+  font-size: 4em;
+  position: absolute;
+}
+
+.home-options {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.hot {
+  text-decoration: none;
+  color: rgb(40, 40, 243);
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 2px;
+}
+
+.hot:hover {
+  text-shadow: 2px 2px 8px goldenrod;
+}
