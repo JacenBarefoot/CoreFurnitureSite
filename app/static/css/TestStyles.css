@@ -60,43 +60,49 @@
 .center-piece {
   height: 100%;
   width: 100%;
-  background-image: URL("/static/images/placeholder.jpg");
+  background-image: URL("/static/images/placeholder.jpeg");
 }
 
-.home-text {
+.home-piece {
   border-radius: 25%;
-  background-color: rgba(0, 0, 0, 0.253);
+  background-color: rgba(255, 255, 255, 0.281);
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
+  margin-left: 15%;
   margin-top: 5%;
-  width: 80%;
+  width: 70%;
   height: 80%;
   text-shadow: 2px 2px 8px white;
   justify-content: center;
   align-items: center;
-  color: rgb(40, 40, 243);
-  font-family: "Patua One";
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 2px;
+
   font-size: 4em;
   position: absolute;
+}
+
+.home-logo {
+  width: 75%;
+  height: 75%;
 }
 
 .home-options {
   display: flex;
   flex-direction: row;
-  width: 40%;
+  width: 50%;
   justify-content: space-between;
+  color: rgb(0, 0, 0);
+  font-family: "Patua One";
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 2px;
 }
 
 .hot {
   text-decoration: none;
-  color: rgb(40, 40, 243);
+  color: rgb(0, 0, 0);
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 2px;
 }
 
 .hot:hover {
-  text-shadow: 2px 2px 8px goldenrod;
+  text-shadow: 2px 2px 8px rgb(32, 119, 218);
 }
