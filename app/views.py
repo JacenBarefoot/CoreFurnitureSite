@@ -1,8 +1,10 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login, logout
+from django.shortcuts import render
+from app.models import Item
 
 def home3(request):
-	return render(request, 'Home3.html')
+    products = Item.objects.all()
+    context = {'products': products}
+    return render(request, 'Home3.html', context)
 
 def itemPage(request):
     return render(request, 'ItemPage.html')
@@ -13,20 +15,9 @@ def homeTest(request):
 def about():
     ...
 
-
-def item():
-    ...
-
-
-def login(request):
-    if request.user.is_authenticated:
-        return redirect('admin')
-
-
-def logout(request):
-    logout(request)
-    return redirect('home3')
-
-
-def admin():
-    ...
+def itemEntry(request, id):
+    context = {
+        "id": id,
+        "items": Item.objects.all()
+    }
+    return render(request, "itemEntry.html", context)
