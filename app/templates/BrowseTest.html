@@ -9,12 +9,37 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="row">
-      <img
-        class="center-piece"
-        src="{% static 'images/placeholder.jpeg' %}"
-        alt=""
-      />
+    <div class="page">
+      <div class="row">
+        <img
+          class="center-piece"
+          src="{% static 'images/placeholder.jpeg' %}"
+          alt=""
+        />
+      </div>
+
+      <div class="row absolute">
+        <div class="row item-card">
+          <div>
+            <img class="image" src="{% static 'images/chair.png' %}" alt="" />
+          </div>
+          <div class="card-info">
+            <h2>In-Stock: ____</h2>
+            <h1>Pink Chair</h1>
+            <h3>Some text goes here but I'm not too sure yet</h3>
+          </div>
+        </div>
+        <div class="row item-card">
+          <div>
+            <img class="image" src="{% static 'images/chair.png' %}" alt="" />
+          </div>
+          <div class="card-info">
+            <h2>In-Stock: ____</h2>
+            <h1>Pink Chair</h1>
+            <h3>Some text goes here but I'm not too sure yet</h3>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
