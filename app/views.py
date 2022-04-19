@@ -13,6 +13,9 @@ def itemPage(request):
 def homeTest(request):
     return render(request, 'Home4.html')
     
+def browseTest(request):
+    return render(request, 'BrowseTest.html')
+    
 def about():
     ...
 

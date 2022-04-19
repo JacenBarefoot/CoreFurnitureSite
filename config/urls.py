@@ -22,6 +22,7 @@ urlpatterns = [
     path('', home3, name="home3"),
     path('itemPage/', itemPage, name="itemPage"),
     path('HomeTest', homeTest, name="homeTest"),
-    path('item/<id>/', itemEntry, name="itemEntry")
+    path('item/<id>/', itemEntry, name="itemEntry"),
+    path('browseTest/', browseTest, name="browseTest")
     # path('about/', views.about, name="aboutCore"),
 ]
