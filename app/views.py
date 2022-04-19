@@ -2,8 +2,9 @@ from django.shortcuts import render
 from app.models import Item
 
 def home3(request):
-    products = Item.objects.all()
-    context = {'products': products}
+    context = {
+        'products': Item.objects.all()
+    }
     return render(request, 'Home3.html', context)
 
 def itemPage(request):
