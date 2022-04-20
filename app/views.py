@@ -16,8 +16,8 @@ def homeTest(request):
 def browseTest(request):
     return render(request, 'BrowseTest.html')
     
-def about():
-    ...
+def about(request):
+    return render(request, 'About.html')
 
 def itemEntry(request, id):
     context = {

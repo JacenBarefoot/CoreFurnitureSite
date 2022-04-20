@@ -23,6 +23,7 @@ urlpatterns = [
     path('itemPage/', itemPage, name="itemPage"),
     path('HomeTest', homeTest, name="homeTest"),
     path('item/<id>/', itemEntry, name="itemEntry"),
-    path('BrowseTest/', browseTest, name="browseTest")
+    path('BrowseTest/', browseTest, name="browseTest"),
+    path('about/', about, name="about")
     # path('about/', views.about, name="aboutCore"),
 ]
