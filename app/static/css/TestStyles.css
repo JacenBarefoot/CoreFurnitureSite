@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   Utilities that Rich created go here:
+   vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+.spacer {
+  height: 2em;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^
+   Home Page Stuff Goes Here
+   vvvvvvvvvvvvvvvvvvvvvvvvv */
+
 * {
   margin: 0;
   padding: 0;
@@ -164,4 +176,39 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^  */
+/* About page stuff goes here!  */
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvv  */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-style: dotted;
+  border-radius: 25%;
+  background-color: rgba(175, 202, 226, 0.719);
+  padding: 5%;
+  padding-bottom: 15%;
+  margin: 4em;
+}
+
+.about-profile {
+  border-radius: 15%;
+  max-width: 50%;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.about-text {
+  font-family: "Patua One";
+  font-size: 2em;
+  text-align: center;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.8px;
 }
