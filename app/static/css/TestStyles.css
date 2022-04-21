@@ -182,14 +182,22 @@
 /* About page stuff goes here!  */
 /* vvvvvvvvvvvvvvvvvvvvvvvvvvv  */
 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   border-style: dotted;
-  border-radius: 25%;
+  border-radius: 15%;
   background-color: rgba(175, 202, 226, 0.719);
-  padding: 5%;
-  padding-bottom: 15%;
+  padding: 2%;
+  padding-bottom: 14%;
+  max-width: 85vw;
   margin: 4em;
 }
 
