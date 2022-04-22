@@ -25,5 +25,4 @@ urlpatterns = [
     path('item/<id>/', itemEntry, name="itemEntry"),
     path('BrowseTest/', browseTest, name="browseTest"),
     path('about/', about, name="about")
-    # path('about/', views.about, name="aboutCore"),
 ]
