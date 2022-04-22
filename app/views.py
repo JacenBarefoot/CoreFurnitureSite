@@ -2,10 +2,7 @@ from django.shortcuts import render
 from app.models import Item
 
 def home3(request):
-    context = {
-        'products': Item.objects.all()
-    }
-    return render(request, 'Home3.html', context)
+    return render(request, 'Home3.html')
 
 def itemPage(request):
     return render(request, 'ItemPage.html')
@@ -14,7 +11,10 @@ def homeTest(request):
     return render(request, 'Home4.html')
     
 def browseTest(request):
-    return render(request, 'BrowseTest.html')
+    context = {
+        'products': Item.objects.all()
+    }
+    return render(request, 'BrowseTest.html', context)
     
 def about(request):
     return render(request, 'About.html')

@@ -141,6 +141,12 @@
   flex-direction: row;
 }
 
+.row2{
+  margin-top: 20em;
+  display: flex;
+  flex-direction: row;
+}
+
 .item-card {
   margin-left: 1em;
   margin-right: 1em;
