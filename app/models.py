@@ -1,6 +1,8 @@
 from django.db import models
 
 class Item(models.Model):
-    name: models.TextField()
-    description: models.TextField()
-    image: models.ImageField(upload_to='images/%Y/%m/%d')
+    name=models.TextField(default=None)
+    description=models.TextField(default=None)
+    image=models.ImageField(upload_to='images/', default=None)
+    def __str__(self):
+	    return self.name
