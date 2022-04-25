@@ -19,10 +19,8 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home3, name="home3"),
-    path('itemPage/', itemPage, name="itemPage"),
-    path('HomeTest', homeTest, name="homeTest"),
-    path('item/<id>/', itemEntry, name="itemEntry"),
-    path('BrowseTest/', browseTest, name="browseTest"),
-    path('about/', about, name="about")
+    path('', home ,name="home"),
+    path('browse/', browse, name="browse"),
+    path('about/', about, name="about"),
+    path('browse/<category>/', categories, name="categories")
 ]

@@ -1,27 +1,19 @@
 from django.shortcuts import render
 from app.models import Item
-
-def home3(request):
-    return render(request, 'Home3.html')
-
-def itemPage(request):
-    return render(request, 'ItemPage.html')
     
-def homeTest(request):
-    return render(request, 'Home4.html')
+def home(request):
+    return render(request, 'index.html')
     
-def browseTest(request):
-    context = {
-        'products': Item.objects.all()
-    }
-    return render(request, 'BrowseTest.html', context)
+def browse(request):
+    return render(request, 'browse.html')
     
 def about(request):
-    return render(request, 'About.html')
+    return render(request, 'about.html')
 
-def itemEntry(request, id):
+def categories(request, category):
+    items = Item.objects.filter(type=category)
     context = {
-        "id": id,
-        "items": Item.objects.all()
+        'category': category,
+        'items': items
     }
-    return render(request, "itemEntry.html", context)
+    return render(request, 'items.html', context)
