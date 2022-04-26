@@ -11,9 +11,8 @@ def about(request):
     return render(request, 'about.html')
 
 def categories(request, category):
-    items = Item.objects.filter(type=category)
     context = {
-        'category': category,
-        'items': items
+        "category": category,
+        "content": Item.objects.filter(type=category)
     }
     return render(request, 'items.html', context)

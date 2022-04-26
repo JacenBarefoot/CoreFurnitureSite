@@ -6,4 +6,4 @@ class Item(models.Model):
     image = models.ImageField(upload_to='images/', default=None, null=True)
 
     def __str__(self):
-        return self.item_no
+        return str(self.item_no)
