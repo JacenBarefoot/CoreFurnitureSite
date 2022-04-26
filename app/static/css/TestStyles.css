@@ -29,18 +29,10 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  justify-content: space-between;
-  background: linear-gradient(
-    rgb(64, 111, 199),
-    rgb(102, 127, 173),
-    white,
-    rgb(102, 127, 173),
-    rgb(64, 111, 199)
-  );
-  height: 14%;
-  border-style: solid;
+  border-style: dotted;
+  background-color: rgba(175, 202, 226, 0.76);
 }
 
 .nav-tabs {
@@ -226,5 +218,3 @@
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 0.8px;
 }
-
-
