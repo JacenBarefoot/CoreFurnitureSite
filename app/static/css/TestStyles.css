@@ -26,39 +26,6 @@
   flex-direction: column;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  width: 100%;
-  border-style: dotted;
-  background-color: rgba(175, 202, 226, 0.76);
-}
-
-.nav-tabs {
-  display: flex;
-  flex-direction: row;
-  width: 40%;
-  margin-right: 5%;
-  justify-content: space-around;
-}
-
-.nav-tab {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: black;
-  padding: 5%;
-  font-size: 1.75em;
-  text-shadow: 2px 2px white;
-}
-
-.nav-tab:hover {
-  background: linear-gradient(skyblue, ghostwhite, skyblue);
-}
-
 .logo {
   max-height: 100px;
   max-width: 150px;
@@ -120,6 +87,48 @@
   background-color: cornflowerblue;
 }
 
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   Browse Page Stuff Goes Here
+   vvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom-style: dotted;
+  background-color: rgba(175, 202, 226, 0.76);
+}
+
+.nav-tabs {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  margin-right: 5%;
+  justify-content: space-around;
+}
+
+.nav-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  padding: 5%;
+  font-size: 1.75em;
+  text-shadow: 2px 2px white;
+}
+
+.nav-tab:hover {
+  background: linear-gradient(skyblue, ghostwhite, skyblue);
+}
+
+.category-sec {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 8%;
+}
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 /* This here will be for item cards */
 /* VvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVv */
@@ -129,12 +138,6 @@
 }
 
 .row {
-  display: flex;
-  flex-direction: row;
-}
-
-.row2 {
-  margin-top: 20em;
   display: flex;
   flex-direction: row;
 }

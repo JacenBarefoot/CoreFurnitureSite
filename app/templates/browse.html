@@ -9,27 +9,39 @@
     <title>Browse</title>
   </head>
   <body>
-    <div class="navbar">
+    <div class="page">
+      <div class="row">
+        <img
+          class="center-piece"
+          src="{% static 'images/placeholder.jpeg' %}"
+          alt=""
+        />
+      </div>
+      <div class="navbar absolute">
         <div>
           <img class="logo" src="{% static 'images/core_logo.png'%}" alt="" />
         </div>
-        <ul class="navtabs">
-          <li><a chref="{% url 'home' %}">Home</a></li>
-          <li><a href="{% url 'browse' %}">Browse</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
-        </ul>
+        <div class="nav-tabs">
+          <a class="nav-tab" href="{% url 'home' %}">Home</a>
+          <a class="nav-tab" href="{% url 'browse' %}">Browse</a>
+          <a class="nav-tab" href="{% url 'about' %}">About</a>
+        </div>
       </div>
-    </div>
-    <div class="item-card">
-      <button>
-        <a href="Living Room Furniture/">Living Room Furniture</a>
-      </button>
-    </div>
-    <div class="item-card">
-      <button><a href="Accent Furniture/">Accent Furniture</a></button>
-    </div>
-    <div class="item-card">
-      <button><a href="Kids Furniture/">Kids Furniture</a></button>
+      <div class="category-sec absolute">
+        <!--jnsdkjfksdfjsjkdfkjsdf-->
+        <div class="item-card">
+          <button>
+            <a href="Living Room Furniture/">Living Room Furniture</a>
+          </button>
+        </div>
+        <div class="item-card">
+          <button><a href="Accent Furniture/">Accent Furniture</a></button>
+        </div>
+        <div class="item-card">
+          <button><a href="Kids Furniture/">Kids Furniture</a></button>
+        </div>
+        <!--fskdfksfkskdfknjsdkfds-->
+      </div>
     </div>
   </body>
 </html>
