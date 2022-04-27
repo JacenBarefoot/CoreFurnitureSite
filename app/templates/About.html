@@ -16,6 +16,17 @@
           alt=""
         />
       </div>
+
+      <div class="navbar absolute">
+        <div>
+          <img class="logo" src="{% static 'images/core_logo.png'%}" alt="" />
+        </div>
+        <div class="nav-tabs">
+          <a class="nav-tab" href="{% url 'home' %}">Home</a>
+          <a class="nav-tab" href="{% url 'browse' %}">Browse</a>
+          <a class="nav-tab nav-tab-active" href="{% url 'about' %}">About</a>
+        </div>
+      </div>
       --------
       <div class="absolute wrapper">
         <div class="container">
