@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Item(models.Model):
     type = models.CharField(max_length=50, default=None, null=True)
     item_no = models.IntegerField(default=None, null=True)
