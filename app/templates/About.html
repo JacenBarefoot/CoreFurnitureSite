@@ -8,18 +8,21 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="page">
-      <div class="row">
-        <img
-          class="center-piece"
-          src="{% static 'images/placeholder.jpeg' %}"
-          alt=""
-        />
-      </div>
-
-      <div class="navbar absolute">
+    <div class="row">
+      <img
+        class="center-piece"
+        src="{% static 'images/placeholder.jpeg' %}"
+        alt=""
+      />
+    </div>
+    <div class="page absolute">
+      <div class="navbar">
         <div>
-          <img class="logo" src="{% static 'images/core_logo.png'%}" alt="" />
+          <img
+            class="nav-logo"
+            src="{% static 'images/core_logo.png'%}"
+            alt=""
+          />
         </div>
         <div class="nav-tabs">
           <a class="nav-tab" href="{% url 'home' %}">Home</a>
@@ -27,8 +30,8 @@
           <a class="nav-tab nav-tab-active" href="{% url 'about' %}">About</a>
         </div>
       </div>
-      --------
-      <div class="absolute wrapper">
+
+      <div class="wrapper">
         <div class="container">
           <div class="about-text">
             <h1>About Us</h1>
@@ -77,6 +80,18 @@
             </p>
           </div>
         </div>
+      </div>
+
+      <div class="footer">
+        <img class="logo" src="{% static 'images/core_logo.png'%}" alt="" />
+        <div>
+          <h1>Contact Us!</h1>
+          <p>-------------</p>
+          <h3>229 Water Wtreet, Maben, MS 39750</h3>
+          <h3>662-634-3015</h3>
+          <h3>corefurniture@corefurniture.com</h3>
+        </div>
+        <img class="logo" src="{% static 'images/MI-USA.png' %}" alt="" />
       </div>
     </div>
   </body>
