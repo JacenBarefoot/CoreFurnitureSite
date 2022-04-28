@@ -145,7 +145,8 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 100%;
-  margin: 5%;
+  padding: 2%;
+  height: 70vh;
 }
 
 .category {
