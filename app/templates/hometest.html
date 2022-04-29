@@ -1,65 +1,24 @@
-{%load static %}
-
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'css/TestStyles.css' %}" />
-    <title>Browse</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <title>Core Furniture</title>
   </head>
   <body>
-    <div class="row">
-      <img
-        class="center-piece"
-        src="{% static 'images/placeholder.jpeg' %}"
-        alt=""
-      />
-    </div>
-    <div class="page absolute">
-      <div class="navbar">
-        <div>
-          <img
-            class="nav-logo"
-            src="{% static 'images/core_logo.png'%}"
-            alt=""
-          />
-        </div>
-        <div class="nav-tabs">
-          <a class="nav-tab" href="{% url 'home' %}">Home</a>
-          <a class="nav-tab nav-tab-active" href="{% url 'browse' %}">Browse</a>
-          <a class="nav-tab" href="{% url 'about' %}">About</a>
-        </div>
+    <div class="page">
+      <div class="row">
+        <img
+          class="center-piece"
+          src="{% static 'images/background.png' %}"
+          alt=""
+        />
       </div>
-      <div class="category-sec">
-        <!--jnsdkjfksdfjsjkdfkjsdf-->
-        <div class="category">
-          <h1 class="cat-header">Living Room Furniture</h1>
-          <a class="cat-hot" href="Living Room Furniture/"> Browse! </a>
-        </div>
-        <div class="category">
-          <h1 class="cat-header">Accent Furniture</h1>
-          <a class="cat-hot" href="Accent Furniture/"> Browse! </a>
-        </div>
-        <div class="category">
-          <h1 class="cat-header">Kid's Furniture</h1>
-          <a class="cat-hot" href="Kid's Furniture/"> Browse! </a>
-        </div>
-        <div class="category">
-          <h1 class="cat-header">Chaise/Lounger</h1>
-          <a class="cat-hot" href="Chaise&Lounger/"> Browse! </a>
-        </div>
-        <!--fskdfksfkskdfknjsdkfds-->
-      </div>
-      <div class="footer">
-        <img class="logo" src="{% static 'images/core_logo.png'%}" alt="" />
-        <div>
-          <h1>Contact Us!</h1>
-          <h3>229 Water Street, Maben, MS 39750</h3>
-          <h3>662-634-3015</h3>
-          <h3>corefurniture@corefurniture.com</h3>
-        </div>
-        <img class="logo" src="{% static 'images/mUSA.png' %}" alt="" />
+      <div class="home-buttons absolute">
+        <a class="hot1" href="/about"> About </a>
+        <a class="hot1" href="/browse"> Browse</a>
       </div>
     </div>
   </body>
