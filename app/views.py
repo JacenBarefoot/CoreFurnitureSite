@@ -9,7 +9,7 @@ def browse(request):
     
 def about(request):
     context = {
-        "about": about
+        "about": About.objects.all()
     }
     return render(request, 'about.html', context)
 

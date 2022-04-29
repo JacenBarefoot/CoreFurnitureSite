@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
     <title>Items</title>
 </head>
 <body>
     <h1>{{category}}</h1>
     {% for item in content %}
-        <p>{{item.item}}</p>
-        <img src={{item.image.url}} />
+        <div class="item-card"> 
+            <p class="card-info">{{item.item}}</p>
+            <img class="image" src={{item.image.url}} />
+        </div>
     {% endfor %}
 </body>
 </html>
