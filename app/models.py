@@ -12,4 +12,4 @@ class Item(models.Model):
 class About(models.Model):
     company = models.CharField(max_length=1000, default=None, null=True)
     matt = models.CharField(max_length=1000, default=None, null=True)
-    brian = models.CharField(max_length=1000, default=None, null=True)
+    bryan = models.CharField(max_length=1000, default=None, null=True)
