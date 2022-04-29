@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from app.models import Item
+from app.models import Item, About
     
 def home(request):
     return render(request, 'index.html')
@@ -8,7 +8,10 @@ def browse(request):
     return render(request, 'browse.html')
     
 def about(request):
-    return render(request, 'about.html')
+    context = {
+        "about": about
+    }
+    return render(request, 'about.html', context)
 
 def categories(request, category):
     context = {
