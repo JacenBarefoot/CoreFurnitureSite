@@ -258,7 +258,7 @@
   margin: 4em;
 }
 
-.about-profile {
+.about-cover {
   border-radius: 15%;
   max-width: 50%;
 }
@@ -266,6 +266,13 @@
 .about {
   display: flex;
   flex-direction: row;
+}
+
+.about-img {
+}
+
+.about-info {
+  font-size: .50em;
 }
 
 .profile-container {
