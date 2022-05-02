@@ -263,6 +263,11 @@
   max-width: 50%;
 }
 
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
 .profile-container {
   display: flex;
   flex-direction: row;

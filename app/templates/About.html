@@ -40,7 +40,7 @@
           <div class="profile-container">
             <img
               class="about-profile"
-              src="{% static 'images/Profile.jpg'%}"
+              src="{% static 'images/sign.jpeg'%}"
               alt=""
             />
           </div>
@@ -48,18 +48,15 @@
           {% for data in about %}
           <div class="about-text">
             <h2>Company Story</h2>
-            <p>
-              {{data.company}}
-            </p>
+            <p>{{data.company}}</p>
             <div class="spacer"></div>
             <h2>About The Founders</h2>
-            <p>
-              {{data.matt}}
-            </p>
+            <div class="about">
+              <img src="{% static 'images/Matt.jpg' %}" alt="" />
+              <p>{{data.matt}}</p>
+            </div>
             <div class="spacer"></div>
-            <p>
-              {{data.bryan}}
-            </p>
+            <p>{{data.bryan}}</p>
           </div>
           {% endfor %}
         </div>
