@@ -271,10 +271,12 @@
 .about-img {
   width: 30%;
   border-radius: 15%;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
 }
 
 .about-info {
-  font-size: 0.9em;
+  font-size: 0.85em;
   padding-left: 1em;
   padding-right: 1em;
 }
