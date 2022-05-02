@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from app.models import Item, About
+from app.models import Item, About, Testimony
     
 def home(request):
     return render(request, 'index.html')
@@ -25,3 +25,9 @@ def categories(request, category):
         "content": Item.objects.filter(type=category)
     }
     return render(request, 'items.html', context)
+
+def testimonies(request):
+    context = {
+        "testimonies": Testimony.objects.all()
+    }
+    return render(request, 'Testimonies.html', context)

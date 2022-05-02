@@ -26,5 +26,6 @@ urlpatterns = [
     path('about/', about, name="about"),
     path('hometest/', hometest, name="hometest"),
     path('hometest2/', hometest2, name="hometest2"),
-    path('browse/<category>/', categories, name="categories")
+    path('browse/<category>/', categories, name="categories"),
+    path('testimonies/', testimonies, name="testimonies")
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

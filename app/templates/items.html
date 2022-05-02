@@ -9,12 +9,48 @@
     <title>Items</title>
 </head>
 <body>
-    <h1>{{category}}</h1>
-    {% for item in content %}
-        <div class="item-card"> 
-            <p class="card-info">{{item.item}}</p>
-            <img class="image" src={{item.image.url}} />
+    <div class="row">
+        <img
+          class="center-piece"
+          src="{% static 'images/placeholder.jpeg' %}"
+          alt=""
+        />
+    </div>
+    <div class="page absolute">
+        <div class="navbar">
+          <div>
+            <img
+              class="nav-logo"
+              src="{% static 'images/core_logo.png'%}"
+              alt=""
+            />
+          </div>
+          <div class="nav-tabs">
+            <a class="nav-tab" href="{% url 'home' %}">Home</a>
+            <a class="nav-tab" href="{% url 'browse' %}">Browse</a>
+            <a class="nav-tab nav-tab-active" href="{% url 'about' %}">About</a>
+          </div>
         </div>
-    {% endfor %}
+        <h1>{{category}}</h1>
+        <div class="row" style="flex-wrap: wrap">
+            {% for item in content %}
+                <div class="item-card"> 
+                    <p class="card-info">{{item.item}}</p>
+                    <img class="image" src={{item.image.url}} />
+                </div>
+            {% endfor %}
+        </div>
+        <div class="footer">
+            <img class="logo" src="{% static 'images/core_logo.png'%}" alt="" />
+            <div>
+              <h1>Contact Us!</h1>
+              <p>-------------</p>
+              <h3>229 Water Street, Maben, MS 39750</h3>
+              <h3>662-634-3015</h3>
+              <h3>corefurniture@corefurniture.com</h3>
+            </div>
+            <img class="logo" src="{% static 'images/mUSA.png' %}" alt="" />
+          </div>
+    </div>
 </body>
 </html>
