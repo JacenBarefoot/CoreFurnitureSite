@@ -53,11 +53,22 @@
             <h2>About The Founders</h2>
             <div class="spacer"></div>
             <div class="about">
-              <img class="about-img" src="{% static 'images/Matt.png' %}" alt="" />
+              <img
+                class="about-img"
+                src="{% static 'images/Matt.png' %}"
+                alt=""
+              />
               <p class="about-info">{{data.matt}}</p>
             </div>
             <div class="spacer"></div>
-            <p>{{data.bryan}}</p>
+            <div class="about">
+              <p class="about-info">{{data.bryan}}</p>
+              <img
+                class="about-img"
+                src="{% static 'images/Bryan.png' %}"
+                alt=""
+              />
+            </div>
           </div>
           {% endfor %}
         </div>
