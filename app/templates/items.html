@@ -28,14 +28,15 @@
           <div class="nav-tabs">
             <a class="nav-tab" href="{% url 'home' %}">Home</a>
             <a class="nav-tab" href="{% url 'browse' %}">Browse</a>
-            <a class="nav-tab nav-tab-active" href="{% url 'about' %}">About</a>
+            <a class="nav-tab" href="{% url 'about' %}">About</a>
           </div>
         </div>
-        <h1>{{category}}</h1>
+        <h1 class="category-text" style="font-size: 3em; padding-bottom: 0.5em;">{{category}}</h1>
+        
         <div class="row" style="flex-wrap: wrap">
             {% for item in content %}
                 <div class="item-card"> 
-                    <p class="card-info">{{item.item}}</p>
+                    <p class="card-info category-text">{{item.item}}</p>
                     <img class="image" src={{item.image.url}} />
                 </div>
             {% endfor %}
