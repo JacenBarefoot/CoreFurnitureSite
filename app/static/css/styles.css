@@ -269,10 +269,12 @@
 }
 
 .about-img {
+  width: 30%;
 }
 
 .about-info {
-  font-size: .50em;
+  font-size: .90em;
+  padding-left: 1em;
 }
 
 .profile-container {
