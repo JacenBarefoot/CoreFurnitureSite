@@ -21,7 +21,7 @@ def hometest2(request):
     
 def about(request):
     context = {
-        "about": About.objects.first,
+        "about": About.objects.all(),
         "footer": Footer.objects.first
     }
     return render(request, 'about.html', context)
