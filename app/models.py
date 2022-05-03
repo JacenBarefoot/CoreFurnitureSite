@@ -19,3 +19,11 @@ class About(models.Model):
 class Testimony(models.Model):
     name = models.CharField(max_length=50, null=True, default=None)
     body = models.CharField(max_length=500, default=None, null=True)
+
+class Footer(models.Model):
+    address = models.CharField(max_length=100, null=True, default=None)
+    phone = models.CharField(max_length=20, null=True, default=None)
+    email = models.CharField(max_length=50, null=True, default=None)
+
+class Contract_info(models.Model):
+    body = models.CharField(max_length=300, null=True, default=None)

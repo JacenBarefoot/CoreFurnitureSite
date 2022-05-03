@@ -27,5 +27,5 @@ urlpatterns = [
     path('hometest/', hometest, name="hometest"),
     path('hometest2/', hometest2, name="hometest2"),
     path('browse/<category>/', categories, name="categories"),
-    path('testimonies/', testimonies, name="testimonies")
+    path('testimonieals/', testimonies, name="testimonials")
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
