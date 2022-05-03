@@ -28,8 +28,7 @@
 }
 
 .nav-logo {
-  max-height: 75px;
-  max-width: 100px;
+  max-width: 110px;
   margin-left: 75%;
 }
 
@@ -45,33 +44,41 @@
   position: fixed;
 }
 
-.home-piece {
-  border-style: dotted;
-  border-radius: 25%;
-  background-color: rgba(255, 255, 255, 0.281);
+.home-wrapper {
   display: flex;
-  flex-direction: column;
-  margin-left: 15%;
-  margin-top: 10vh;
-  width: 70%;
-  height: 80vh;
-  text-shadow: 2px 2px 8px white;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
-  font-size: 4em;
   position: absolute;
 }
 
-.home-logo {
+.home-piece {
+  border-style: dotted;
+  border-radius: 25%;
+  background-color: rgba(175, 202, 226, 0.76);
+  height: 70%;
   width: 60%;
-  height: 75%;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 2px 2px 8px white;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-logo {
+  padding: 1em;
+  height: 18em;
+  width: 25em;
 }
 
 .home-options {
   display: flex;
   flex-direction: row;
-  width: 50%;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-evenly;
   color: rgb(0, 0, 0);
   font-family: "Patua One";
   -webkit-text-stroke-color: white;
@@ -81,6 +88,8 @@
 .hot {
   border-radius: 25%;
   padding: 2%;
+  margin: 1%;
+  font-size: 2.5em;
   background-color: rgba(175, 202, 226, 0.582);
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -91,6 +100,13 @@
 .hot:hover {
   text-shadow: 2px 2px 8px rgb(32, 119, 218);
   background-color: cornflowerblue;
+}
+
+.contract-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  text-align: center;
 }
 
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -109,9 +125,8 @@
 .nav-tabs {
   display: flex;
   flex-direction: row;
-  width: 40%;
-  margin-right: 5%;
-  height: 10%;
+  width: 55%;
+  margin-right: 2%;
   justify-content: space-around;
 }
 
@@ -254,7 +269,7 @@
   border-radius: 15%;
   background-color: rgba(175, 202, 226, 0.719);
   padding: 2%;
-  padding-bottom: 14%;
+  padding-bottom: 10%;
   max-width: 85vw;
   margin: 4em;
 }
@@ -270,7 +285,7 @@
 }
 
 .about-img {
-  width: 30%;
+  max-width: 35%;
   border-radius: 15%;
   padding-right: 0.5em;
   padding-left: 0.5em;
