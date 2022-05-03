@@ -31,7 +31,6 @@
           <a class="nav-tab" href=""> Testimonials </a>
         </div>
       </div>
-
       <div class="wrapper">
         <div class="container">
           <div class="about-text">
@@ -46,10 +45,9 @@
             />
           </div>
           <div class="spacer"></div>
-          {% for data in about %}
           <div class="about-text">
             <h2>Company Story</h2>
-            <p>{{data.company}}</p>
+            <p>{{about.company}}</p>
             <div class="spacer"></div>
             <h2>About The Founders</h2>
             <div class="spacer"></div>
@@ -59,11 +57,11 @@
                 src="{% static 'images/Matt.png' %}"
                 alt=""
               />
-              <p class="about-info">{{data.matt}}</p>
+              <p class="about-info">{{about.matt}}</p>
             </div>
             <div class="spacer"></div>
             <div class="about">
-              <p class="about-info">{{data.bryan}}</p>
+              <p class="about-info">{{about.bryan}}</p>
               <img
                 class="about-img"
                 src="{% static 'images/Bryan.png' %}"
@@ -71,7 +69,6 @@
               />
             </div>
           </div>
-          {% endfor %}
         </div>
       </div>
 
