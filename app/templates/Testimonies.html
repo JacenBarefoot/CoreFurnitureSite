@@ -11,7 +11,7 @@
     <div class="row">
       <img
         class="center-piece"
-        src="{% static 'images/BrowseBG.jpg' %}"
+        src="{% static 'images/TestimonialBG.jpg' %}"
         alt=""
       />
     </div>
@@ -31,11 +31,11 @@
           <a class="nav-tab" href="{% url 'testimonials' %}"> Testimonials </a>
         </div>
       </div>
-      <div class="row" style="flex-wrap: wrap">
+      <div class="testimonials">
         {% for item in testimonies %}
-        <div class="item-card">
-          <p class="card-info category-text">{{item.name}}</p>
-          <p class="card-info category-text">{{item.body}}</p>
+        <div class="testimony">
+          <p class="t-info">{{item.body}}</p>
+          <p class="t-author">-{{item.name}}</p>
         </div>
         {% endfor %}
       </div>
