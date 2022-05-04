@@ -15,6 +15,7 @@
         alt=""
       />
     </div>
+
     <div class="page absolute">
       <div class="navbar">
         <div>
@@ -31,6 +32,7 @@
           <a class="nav-tab" href="{% url 'testimonials' %}"> Testimonials </a>
         </div>
       </div>
+
       <div class="testimonials">
         {% for item in testimonies %}
         <div class="testimony">
@@ -39,6 +41,7 @@
         </div>
         {% endfor %}
       </div>
+
       <div class="footer">
         <img class="logo" src="{% static 'images/core_logo.png'%}" alt="" />
         <div>
