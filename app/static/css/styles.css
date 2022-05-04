@@ -453,8 +453,20 @@
 
   .nav-tabs {
     flex-direction: column;
+    margin-right: 67px;
+    margin-bottom: 2em;
   }
 
+  .nav-tab {
+    width: 8em;
+    text-align: center;
+    border: dotted;
+    margin-top: 1em;
+  }
+
+  .nav-logo {
+    margin-left: 30px;
+  }
   .home-piece {
     width: 90vw;
     height: 90vh;
@@ -481,7 +493,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .navbar a:not(:first-child) {
     display: none;
   }
@@ -493,7 +505,7 @@
 .navbar .icon {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .navbar.responsive {
     position: relative;
     /* height: 325px !important; */
@@ -501,7 +513,7 @@
   .navbar.responsive .icon {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 20px;
   }
   .navbar.responsive a {
     float: none;
