@@ -89,6 +89,7 @@
   border-radius: 25%;
   padding: 2%;
   margin: 1%;
+  border-style: dotted;
   font-size: 2.5em;
   background-color: rgba(175, 202, 226, 0.582);
   text-decoration: none;
@@ -160,16 +161,15 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 2%;
-  padding: 1%;
 }
 
 .category {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding: 1.65em;
-  margin-top: 1.5em;
+  padding: 2em;
+  margin-top: 2em;
   border-style: dotted;
   background-color: rgba(175, 202, 226, 0.582);
   border-radius: 20%;
@@ -274,7 +274,9 @@
   flex-direction: column;
   border-style: dotted;
   border-radius: 15%;
-  background-color: rgba(175, 202, 226, 0.719);
+  background-color: rgba(175, 202, 226, 0.76);
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.5px;
   padding: 2%;
   padding-bottom: 10%;
   max-width: 85vw;
@@ -315,8 +317,6 @@
   font-family: "Patua One";
   font-size: 2em;
   text-align: center;
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 0.8px;
 }
 
 .category-text {
@@ -349,50 +349,6 @@
   bottom: 10%;
   font-family: "patua one";
   font-size: 3em;
-}
-
-.hot1 {
-  border-style: dotted;
-  border-radius: 25%;
-  padding: 2%;
-  background-color: rgba(175, 202, 226, 0.582);
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 2px;
-}
-
-.hot1:hover {
-  text-shadow: 2px 2px 8px rgb(32, 119, 218);
-  background-color: cornflowerblue;
-}
-
-.home-buttons2 {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  right: 2em;
-  margin-bottom: 11%;
-  justify-content: space-evenly;
-  bottom: 10%;
-  font-family: "patua one";
-  font-size: 3em;
-}
-
-.hot2 {
-  border-style: dotted;
-  border-radius: 25%;
-  padding: 2%;
-  background-color: rgba(175, 202, 226, 0.582);
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 2px;
-}
-
-.hot2:hover {
-  text-shadow: 2px 2px 8px rgb(32, 119, 218);
-  background-color: cornflowerblue;
 }
 
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^  */
@@ -445,6 +401,26 @@
 /* Mobile stuff goes here!  */
 /* vvvvvvvvvvvvvvvvvvvvvvvv */
 
+@media only screen and (max-width: 2560px) and (min-width: 1440px) {
+  .hot {
+    width: 22%;
+    text-align: center;
+  }
+
+  .home-logo {
+    width: 32em;
+    height: 24em;
+  }
+
+  .about-info {
+    font-size: 1.2em;
+  }
+
+  .category-sec {
+    height: 70vh;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .testimony {
     width: 90vw;
@@ -471,25 +447,12 @@
     align-items: center;
   }
 
-  .nav-logo {
-    margin-left: 30px;
-  }
-
   .about-img {
     max-width: 80%;
   }
 
   .nav-tabs {
     flex-direction: column;
-    justify-content: center;
-    padding:1em;
-    margin: auto auto;
-  }
-
-  .nav-tab {
-    margin-right: 100px;
-    text-align: center;
-    justify-content: center;
   }
 
   .home-piece {
@@ -503,7 +466,6 @@
   }
 
   .hot {
-    border-style: dotted;
     text-align: center;
     justify-content: center;
     width: 70%;
@@ -519,8 +481,8 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .navbar a:not(:first-child){
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
     display: none;
   }
   .navbar a.icon {
@@ -531,20 +493,19 @@
 .navbar .icon {
   display: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   .navbar.responsive {
-    position: relative; 
+    position: relative;
     /* height: 325px !important; */
   }
   .navbar.responsive .icon {
     position: absolute;
+    right: 0;
     top: 0;
-    margin-top: 0.6em;
   }
   .navbar.responsive a {
     float: none;
     display: block !important;
-    margin-top: 0.5em;
-    border-style: dotted;
+    text-align: left;
   }
 }
