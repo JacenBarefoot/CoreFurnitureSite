@@ -27,11 +27,17 @@
           />
         </div>
         <div class="nav-tabs">
+          <a href="javascript:void(0);" style="font-size: 30px;
+          text-align: end;
+          margin-right: 2em;
+          position: absolute;
+          /* margin-left: 10em; */
+          text-decoration: none;
+          right: 0;" class="icon" onclick="myFunction()">&#9776;</a>
           <a class="nav-tab" href="{% url 'home' %}">Home</a>
           <a class="nav-tab nav-tab-active" href="{% url 'browse' %}">Browse</a>
           <a class="nav-tab" href="{% url 'about' %}">About</a>
           <a class="nav-tab" href="{% url 'testimonials' %}"> Testimonials </a>
-          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
       </div>
       <div class="category-sec">

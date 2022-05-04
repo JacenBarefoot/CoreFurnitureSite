@@ -471,12 +471,25 @@
     align-items: center;
   }
 
+  .nav-logo {
+    margin-left: 30px;
+  }
+
   .about-img {
     max-width: 80%;
   }
 
   .nav-tabs {
     flex-direction: column;
+    justify-content: center;
+    padding:1em;
+    margin: auto auto;
+  }
+
+  .nav-tab {
+    margin-right: 100px;
+    text-align: center;
+    justify-content: center;
   }
 
   .home-piece {
@@ -506,7 +519,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .navbar a:not(:first-child){
     display: none;
   }
@@ -518,19 +531,20 @@
 .navbar .icon {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .navbar.responsive {
     position: relative; 
     /* height: 325px !important; */
   }
   .navbar.responsive .icon {
     position: absolute;
-    right: 0;
     top: 0;
+    margin-top: 0.6em;
   }
   .navbar.responsive a {
     float: none;
     display: block !important;
-    text-align: left;
+    margin-top: 0.5em;
+    border-style: dotted;
   }
 }
