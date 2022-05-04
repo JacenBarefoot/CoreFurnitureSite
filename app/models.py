@@ -1,13 +1,8 @@
 from django.db import models
 
-class Browse_Categories(models.Model):
-    category_name = models.TextField(null=True, default=None)
-
-    def __str__(self):
-        return self.category_name
 
 class Item(models.Model):
-    category = models.ForeignKey(Browse_Categories, on_delete=models.PROTECT, default=None, null=True)
+    category = models.CharField(max_length=50, default=None, null=True)
     item = models.CharField(max_length=100, default=None, null=True)
     image = models.ImageField(upload_to='images/', default=None, null=True)
 

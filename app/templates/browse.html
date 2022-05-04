@@ -16,7 +16,6 @@
         alt=""
       />
     </div>
-
     <div class="page absolute">
       <div class="navbar">
         <div>
@@ -33,18 +32,30 @@
           <a class="nav-tab" href="{% url 'testimonials' %}"> Testimonials </a>
         </div>
       </div>
-
       <div class="category-sec">
         <!--jnsdkjfksdfjsjkdfkjsdf-->
-        {% for category in browse_categories %}
-          <div class="category">
-            <h1 class="cat-header">{{category.category_name}}</h1>
-            <a class="cat-hot" href="{{category.category_name}}/"> Browse! </a>
-          </div>
-          {% endfor %}
+        <div class="category">
+          <h1 class="cat-header">Living Room Furniture</h1>
+          <p class="about-text">2000's-3000's</p>
+          <a class="cat-hot" href="Living Room Furniture/"> Browse! </a>
+        </div>
+        <div class="category">
+          <h1 class="cat-header">Accent Furniture</h1>
+          <p class="about-text">4000's-5000's</p>
+          <a class="cat-hot" href="Accent Furniture/"> Browse! </a>
+        </div>
+        <div class="category">
+          <h1 class="cat-header">Kid's Furniture</h1>
+          <p class="about-text">9000's</p>
+          <a class="cat-hot" href="Kid's Furniture/"> Browse! </a>
+        </div>
+        <div class="category">
+          <h1 class="cat-header">Chaise/Lounger</h1>
+          <p class="about-text">7000's</p>
+          <a class="cat-hot" href="Chaise&Lounger/"> Browse! </a>
+        </div>
         <!--fskdfksfkskdfknjsdkfds-->
       </div>
-
       <div class="footer">
         <img class="logo" src="{% static 'images/core_logo.png'%}" alt="" />
         <div>

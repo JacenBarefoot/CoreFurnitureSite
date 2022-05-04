@@ -9,8 +9,7 @@ def home(request):
     
 def browse(request):
     context = {
-        "footer": Footer.objects.first(),
-        "browse_categories": Browse_Categories.objects.all()
+        "footer": Footer.objects.first()
     }
     return render(request, 'browse.html', context)
     
@@ -30,8 +29,8 @@ def about(request):
 def categories(request, category):
     context = {
         "category": category,
-        "content": Item.objects.filter(category=category),
-        "footer": Footer.objects.first()
+        "footer": Footer.objects.first(),
+        "content": Item.objects.filter(category=category)
     }
     return render(request, 'items.html', context)
 
