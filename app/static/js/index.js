@@ -1,2 +1,8 @@
-document.getElementById("demo").addEventListener("mouseover", mouseOver);
-document.getElementById("demo").addEventListener("mouseout", mouseOut);
+function myFunction1() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
