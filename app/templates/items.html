@@ -22,7 +22,7 @@
       />
     </div>
     <div class="page absolute">
-      <div class="navbar">
+      <div class="navbar" id="myTopnav">
         <div>
           <img
             class="nav-logo"
@@ -31,13 +31,14 @@
           />
         </div>
         <div class="nav-tabs">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
           <a class="nav-tab" href="{% url 'home' %}">Home</a>
           <a class="nav-tab" href="{% url 'browse' %}">Browse</a>
           <a class="nav-tab" href="{% url 'about' %}">About</a>
           <a class="nav-tab" href="{% url 'testimonials' %}"> Testimonials </a>
         </div>
       </div>
-      <h1 class="category-text" style="font-size: 3em; padding-bottom: 0.5em">
+      <h1 class="category-text category-text-1">
         {{category}}
       </h1>
       <div class="spacer"></div>
@@ -64,5 +65,15 @@
         <img class="logo" src="{% static 'images/mUSA.png' %}" alt="" />
       </div>
     </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
   </body>
 </html>
