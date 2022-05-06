@@ -13,12 +13,6 @@ def browse(request):
     }
     return render(request, 'browse.html', context)
     
-def hometest(request):
-    return render(request, 'hometest.html')
-
-def hometest2(request):
-    return render(request, 'hometest2.html')
-    
 def about(request):
     context = {
         "about": About.objects.first(),
