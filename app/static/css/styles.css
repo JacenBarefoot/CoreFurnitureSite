@@ -211,7 +211,7 @@
 .icon {
   font-size: 37px;
   text-align: end;
-  margin-right: 2em;
+  margin-right: 0.7em;
   position: absolute;
   text-decoration: none;
   right: 0;
@@ -487,12 +487,12 @@
 
   .nav-tabs {
     flex-direction: column;
-    margin-right: 67px;
+    margin-right: 38px;
     margin-bottom: 2em;
   }
 
   .nav-tab {
-    width: 8em;
+    width: 5em;
     text-align: center;
     border: dotted;
     margin-top: 1em;
@@ -555,6 +555,6 @@
   .navbar.responsive a {
     float: none;
     display: block !important;
-    text-align: left;
+    text-align: center;
   }
 }
