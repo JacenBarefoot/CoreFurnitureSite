@@ -31,16 +31,16 @@
           />
         </div>
         <div class="nav-tabs">
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            >&#9776;</a
+          >
           <a class="nav-tab" href="{% url 'home' %}">Home</a>
           <a class="nav-tab" href="{% url 'about' %}">About</a>
           <a class="nav-tab" href="{% url 'testimonials' %}"> Testimonials </a>
           <a class="nav-tab" href="{% url 'browse' %}">Browse</a>
         </div>
       </div>
-      <h1 class="category-text category-text-1">
-        {{category}}
-      </h1>
+      <h1 class="category-text category-text-1">{{category}}</h1>
       <div class="spacer"></div>
 
       <div class="item-wrapper">
@@ -55,7 +55,7 @@
       <div class="spacer"></div>
       <div class="footer">
         <img class="logo" src="{% static 'images/core_logo.png'%}" alt="" />
-        <div>
+        <div class="footer-info">
           <h1>Contact Us!</h1>
           <p>-------------</p>
           <h3>{{footer.address}}</h3>

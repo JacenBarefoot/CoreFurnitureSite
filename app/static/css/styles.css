@@ -183,7 +183,7 @@
   -webkit-text-stroke-width: 1px;
 }
 
-.cat-text{
+.cat-text {
   font-size: 2.5em;
   font-family: "Patua One";
   -webkit-text-stroke-color: white;
@@ -358,7 +358,6 @@
   justify-content: space-evenly;
   background-color: rgba(175, 202, 226, 0.719);
   border-top-style: dotted;
-  width: 98vw;
   padding: 1%;
   bottom: 0;
   align-items: center;
@@ -446,8 +445,25 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .card-info {
+    font-size: 175%;
+  }
+
+  .center-piece {
+    height: 100%;
+    width: 100%;
+  }
+
   .testimony {
     width: 90vw;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer-info {
+    font-size: 65%;
   }
 
   .logo {
@@ -459,7 +475,8 @@
   }
 
   .cat-header {
-    font-size: 2.7em;
+    font-size: 250%;
+    text-align: center;
   }
 
   .cat-hot {
@@ -479,6 +496,10 @@
   .about {
     flex-direction: column;
     align-items: center;
+  }
+
+  .about-text {
+    font-size: 150%;
   }
 
   .about-img {
@@ -504,6 +525,10 @@
   .home-piece {
     width: 90vw;
     height: 90vh;
+  }
+
+  .home-logo {
+    width: 90%;
   }
 
   .home-options {
