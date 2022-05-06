@@ -30,7 +30,7 @@ def categories(request, category):
     context = {
         "category": category,
         "footer": Footer.objects.first(),
-        "content": Item.objects.filter(category=category)
+        "content": Item.objects.filter(category=category).order_by('item')
     }
     return render(request, 'items.html', context)
 
@@ -39,4 +39,4 @@ def testimonies(request):
         "testimonies": Testimony.objects.all(),
         "footer": Footer.objects.first()
     }
-    return render(request, 'Testimonies.html', context)
+    return render(request, 'testimonies.html', context)

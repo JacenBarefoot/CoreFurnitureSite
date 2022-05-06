@@ -200,6 +200,16 @@
 .cat-hot:hover {
   background-color: rgba(27, 202, 255, 0.63);
 }
+
+.icon {
+  font-size: 30px;
+  text-align: end;
+  margin-right: 2em;
+  position: absolute;
+  text-decoration: none;
+  right: 0;
+  top: 17px;
+}
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 /* This here will be for item cards */
 /* VvVvVvVvVvVvVvVvVvVvVvVvVvVvVvVv */
@@ -328,6 +338,11 @@
   padding-top: 1em;
 }
 
+
+.category-text-1 {
+  font-size: 3em; 
+  padding-bottom: 0.5em;
+}
 .footer {
   display: flex;
   flex-direction: row;
