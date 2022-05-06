@@ -183,6 +183,13 @@
   -webkit-text-stroke-width: 1px;
 }
 
+.cat-text{
+  font-size: 2.5em;
+  font-family: "Patua One";
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+}
+
 .cat-hot {
   border-radius: 25%;
   padding: 1%;
@@ -232,6 +239,9 @@
 }
 
 .item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-left: 1.5em;
   margin-right: 1.5em;
   margin-top: 1.5em;
