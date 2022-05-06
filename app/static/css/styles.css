@@ -477,7 +477,7 @@
   .cat-header {
     font-size: 250%;
     text-align: center;
-    -webkit-text-stroke-width: .50px;
+    -webkit-text-stroke-width: 0.5px;
   }
 
   .cat-hot {
@@ -529,7 +529,7 @@
   }
 
   .home-logo {
-    width: 90%;
+    max-width: 90%;
     height: 45%;
   }
 
