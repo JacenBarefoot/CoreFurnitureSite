@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
-    <link rel="shortcut icon" type="image/png" href="{% static 'images/core_logo.png'%}"/>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="{% static 'images/core_logo.png'%}"
+    />
     <title>Browse</title>
   </head>
   <body>
@@ -27,19 +31,28 @@
           />
         </div>
         <div class="nav-tabs">
-          <a href="javascript:void(0);" style="font-size: 30px;
-          text-align: end;
-          margin-right: 2em;
-          position: absolute;
-          text-decoration: none;
-          right: 0;
-          top: 17px;" class="icon" onclick="myFunction()">&#9776;</a>
+          <a
+            href="javascript:void(0);"
+            style="
+              font-size: 30px;
+              text-align: end;
+              margin-right: 2em;
+              position: absolute;
+              text-decoration: none;
+              right: 0;
+              top: 17px;
+            "
+            class="icon"
+            onclick="myFunction()"
+            >&#9776;</a
+          >
           <a class="nav-tab" href="{% url 'home' %}">Home</a>
           <a class="nav-tab nav-tab-active" href="{% url 'browse' %}">Browse</a>
           <a class="nav-tab" href="{% url 'about' %}">About</a>
           <a class="nav-tab" href="{% url 'testimonials' %}"> Testimonials </a>
         </div>
       </div>
+      <div class="spacer"></div>
       <div class="category-sec">
         <!--jnsdkjfksdfjsjkdfkjsdf-->
         <div class="category">
@@ -64,6 +77,7 @@
         </div>
         <!--fskdfksfkskdfknjsdkfds-->
       </div>
+      <div class="spacer"></div>
       <div class="footer">
         <img class="logo" src="{% static 'images/core_logo.png'%}" alt="" />
         <div>
@@ -84,6 +98,6 @@
           x.className = "navbar";
         }
       }
-      </script>
+    </script>
   </body>
 </html>

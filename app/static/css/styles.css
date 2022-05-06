@@ -401,7 +401,7 @@
 /* Mobile stuff goes here!  */
 /* vvvvvvvvvvvvvvvvvvvvvvvv */
 
-@media only screen and (max-width: 2560px) and (min-width: 1440px) {
+@media only screen and (max-width: 2560px) and (min-width: 1445px) {
   .hot {
     width: 22%;
     text-align: center;
